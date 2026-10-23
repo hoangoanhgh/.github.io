@@ -1,121 +1,169 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta property="og:title" content="HOÀNG OANH Boutique | Đẳng Cấp Thời Trang Quý Cô">
-    <meta property="og:description" content="Khám phá bộ sưu tập thiết kế độc bản, sang trọng và tinh tế dành riêng cho phái đẹp.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800"> <meta property="og:type" content="website">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://script.google.com">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230a0a0a'/%3E%3Ctext x='32' y='43' font-size='34' text-anchor='middle' fill='%23D4AF37' font-family='serif'%3EHO%3C/text%3E%3C/svg%3E">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"HOÀNG OANH","telephone":"+84978612816","description":"Thời trang thượng lưu, thiết kế độc bản, stylist tư vấn riêng 1-1."}</script>
+    <noscript><style>[data-aos]{opacity:1!important;transform:none!important}</style></noscript>
+    <meta name="description" content="HOÀNG OANH - thời trang thượng lưu, thiết kế độc bản, stylist tư vấn riêng 1-1.">
+    <meta property="og:title" content="HOÀNG OANH | Đẳng Cấp & Tinh Tế">
+    <meta property="og:description" content="Thiết kế độc bản, thử đồ tại gia, tư vấn VIP 1-1.">
     <title>HOÀNG OANH | Đẳng Cấp & Tinh Tế</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <style>
-        :root { --gold: #D4AF37; --black: #0a0a0a; --white: #ffffff; --gray: #f5f5f5; --red: #c91818; }
+        :root { --gold: #D4AF37; --black: #0a0a0a; --white: #ffffff; --gray: #f9f9f9; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Montserrat', sans-serif; background: var(--white); color: var(--black); overflow-x: hidden; scroll-behavior: smooth; }
 
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
 
-        /* HEADER & HERO */
+        /* HEADER */
         header { position: fixed; top: 0; width: 100%; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
         .logo { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--black); letter-spacing: 2px; text-decoration: none; }
         .logo span { color: var(--gold); }
-        
+
+        /* HERO SECTION */
         .hero { height: 80vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: var(--white); }
         .hero h1 { font-size: 4rem; margin-bottom: 20px; letter-spacing: 5px; }
         .hero p { font-size: 1.2rem; text-transform: uppercase; letter-spacing: 3px; color: var(--gold); }
 
-        /* SẢN PHẨM & VIDEO LOOKBOOK HOVER */
+        /* DẢI ĐẶC QUYỀN */
         .privileges { padding: 40px 5%; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; background: var(--black); color: var(--white); text-align: center; }
         .priv-item i { font-size: 2rem; color: var(--gold); margin-bottom: 15px; }
+        .priv-item h3 { font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 10px; }
+        .priv-item p { font-size: 0.8rem; color: #888; }
+
+        /* SECTION PRODUCT */
         .section-title { text-align: center; padding: 80px 0 40px; }
         .section-title h2 { font-size: 2.5rem; position: relative; display: inline-block; }
         .section-title h2::after { content: ''; width: 50px; height: 2px; background: var(--gold); position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); }
-        
-        .product-grid { padding: 0 5% 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
-        .product-card { background: var(--white); overflow: hidden; transition: 0.5s; position: relative; text-align: center; padding-bottom: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);}
-        .product-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
-        .img-container { overflow: hidden; position: relative; }
-        .product-img { width: 100%; height: 450px; object-fit: cover; transition: transform 0.8s ease; }
-        .product-card:hover .product-img { transform: scale(1.08); } 
-        
-        /* SCARCITY - DẢI RUY BĂNG ĐỘC BẢN */
-        .ribbon { position: absolute; top: 15px; left: -35px; background: var(--red); color: white; padding: 5px 40px; transform: rotate(-45deg); font-size: 0.7rem; font-weight: bold; letter-spacing: 1px; z-index: 10; box-shadow: 0 2px 5px rgba(0,0,0,0.3); }
 
+        .product-grid { padding: 0 5% 80px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .product-card { background: var(--white); border: 1px solid #eee; overflow: hidden; transition: 0.5s; position: relative; text-align: center; padding-bottom: 20px;}
+        .product-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .product-img { width: 100%; height: 450px; object-fit: cover; }
         .product-info { padding: 20px; }
         .product-info h3 { font-size: 1.3rem; margin-bottom: 10px; }
         .product-price { color: var(--gold); font-weight: 600; font-size: 1.1rem; }
+
+        /* NÚT CHỐT ĐƠN */
         .btn-vip { display: inline-block; margin-top: 15px; padding: 12px 30px; background: var(--black); color: var(--white); text-decoration: none; font-size: 0.8rem; font-weight: 600; letter-spacing: 2px; transition: 0.3s; border: 1px solid var(--black); cursor: pointer; }
-        .btn-vip:hover { background: var(--gold); color: var(--black); border-color: var(--gold); }
+        .btn-vip:hover { background: transparent; color: var(--black); }
 
-        /* QUÝ CÔ HOÀNG OANH - SOCIAL PROOF */
-        .feedback-section { background: var(--gray); padding-bottom: 80px; }
-        .feedback-container { display: flex; overflow-x: auto; gap: 20px; padding: 0 5%; scroll-snap-type: x mandatory; }
-        .feedback-container::-webkit-scrollbar { display: none; }
-        .feedback-card { min-width: 300px; background: var(--white); padding: 30px; border-left: 3px solid var(--gold); scroll-snap-align: start; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-        .feedback-card p { font-style: italic; color: #555; font-size: 0.95rem; line-height: 1.6; }
-        .feedback-author { margin-top: 15px; font-weight: 700; color: var(--black); display: flex; align-items: center; gap: 10px; }
-        .feedback-author i { color: var(--gold); }
+        /* FLOATING CONTACT BUTTONS */
+        .floating-contact { position: fixed; bottom: 30px; left: 30px; z-index: 999; display: flex; flex-direction: column; gap: 15px; }
+        .float-btn { width: 55px; height: 55px; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; text-decoration: none; font-size: 1.5rem; box-shadow: 0 5px 20px rgba(0,0,0,0.2); transition: 0.3s; }
+        .float-btn:hover { transform: scale(1.1); }
+        .btn-phone { background: #28a745; animation: pulse-green 2s infinite; }
+        .btn-facebook { background: #1877F2; }
+        @keyframes pulse-green { 0% { box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(40, 167, 69, 0); } 100% { box-shadow: 0 0 0 0 rgba(40, 167, 69, 0); } }
 
-        /* TỦ ĐỒ (GIỎ HÀNG) LƠ LỬNG */
-        #cart-floating-btn { position: fixed; top: 80px; right: 20px; background: var(--gold); color: var(--black); width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; cursor: pointer; z-index: 1001; box-shadow: 0 5px 15px rgba(0,0,0,0.2); transition: 0.3s; }
-        #cart-floating-btn:hover { transform: scale(1.1); }
-        .cart-count { position: absolute; top: -5px; right: -5px; background: var(--red); color: white; font-size: 0.8rem; font-weight: bold; width: 25px; height: 25px; border-radius: 50%; display: flex; justify-content: center; align-items: center; }
+        /* THÔNG BÁO FOMO */
+        #fomo-popup { position: fixed; bottom: 30px; right: 100px; background: white; padding: 15px 25px; border-radius: 50px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); display: flex; align-items: center; gap: 15px; z-index: 1001; transform: translateY(150px); transition: 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55); border: 1px solid var(--gold); }
+        #fomo-popup.active { transform: translateY(0); }
+        .fomo-img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
+        .fomo-text { font-size: 0.8rem; line-height: 1.4; }
+        .fomo-text b { color: var(--gold); }
 
-        /* GIAO DIỆN TỦ ĐỒ & CHAR AI */
-        #char-ai-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 2500; opacity: 0; visibility: hidden; transition: 0.3s; display: flex; justify-content: center; align-items: center; }
-        #char-ai-overlay.active { opacity: 1; visibility: visible; }
-        .char-box { background: var(--white); width: 95%; max-width: 800px; border-radius: 15px; position: relative; transform: translateY(50px); transition: 0.5s; display: flex; flex-wrap: wrap; overflow: hidden; box-shadow: 0 10px 40px rgba(212, 175, 55, 0.3); }
-        #char-ai-overlay.active .char-box { transform: translateY(0); }
-        .char-close { position: absolute; top: 15px; right: 20px; font-size: 1.5rem; cursor: pointer; color: #888; z-index: 10; }
-        
-        .cart-section { flex: 1; min-width: 300px; background: var(--gray); padding: 30px; border-right: 1px solid #ddd; max-height: 80vh; overflow-y: auto; }
-        .cart-section h3 { font-family: 'Playfair Display', serif; color: var(--black); margin-bottom: 20px; border-bottom: 2px solid var(--gold); padding-bottom: 10px;}
-        .cart-item { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px dashed #ccc; font-size: 0.9rem; }
-        .remove-btn { color: var(--red); cursor: pointer; font-size: 1.2rem; }
-        .cart-total { margin-top: 20px; font-size: 1.2rem; font-weight: bold; text-align: right; color: var(--black); }
-        .cart-total span { color: var(--gold); font-size: 1.5rem; }
-        .scarcity-warning { color: var(--red); font-size: 0.8rem; margin-top: 15px; font-style: italic; text-align: center; background: #ffebeb; padding: 10px; border-radius: 5px; }
+        /* FOOTER */
+        footer { background: var(--black); color: var(--white); padding: 80px 5% 30px; text-align: center; }
+        .footer-logo { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--gold); margin-bottom: 20px; }
+        .contact-info { margin: 20px 0; color: #888; font-size: 0.9rem; }
+        .contact-info p { margin: 10px 0; }
 
-        .ai-section { flex: 1; min-width: 300px; padding: 30px; background: var(--white); text-align: center; }
-        .char-header h3 { font-family: 'Playfair Display', serif; color: var(--gold); margin-bottom: 5px; font-size: 1.6rem; }
-        .char-header p { font-size: 0.85rem; color: #555; margin-bottom: 20px; font-style: italic; }
-        .input-group { margin-bottom: 15px; text-align: left; }
-        .input-group label { display: block; font-size: 0.8rem; font-weight: 600; margin-bottom: 5px; }
-        .input-group input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-family: 'Montserrat', sans-serif; font-size: 0.9rem; }
-        .size-row { display: flex; gap: 15px; }
-        .btn-submit-char { width: 100%; padding: 15px; background: var(--black); color: var(--white); border: none; font-size: 1rem; font-weight: 600; cursor: pointer; transition: 0.3s; border-radius: 5px; margin-top: 10px; letter-spacing: 1px;}
-        .btn-submit-char:hover { background: var(--gold); color: var(--black); }
+        /* ===== NÂNG CẤP: cao cấp + tương thích mọi thiết bị ===== */
+        html { -webkit-text-size-adjust: 100%; scroll-padding-top: 80px; }
+        body { -webkit-font-smoothing: antialiased; }
+        header { padding: 16px max(5%, env(safe-area-inset-left)); }
+        .hero { height: auto; min-height: 75vh; min-height: 75svh; padding: 110px 6% 60px; }
+        .hero h1 { font-size: clamp(2rem, 7vw, 4rem); letter-spacing: clamp(2px, .8vw, 5px); }
+        .hero p { font-size: clamp(.8rem, 2.4vw, 1.2rem); }
+        .section-title { padding: clamp(50px, 8vw, 80px) 5% 30px; }
+        .section-title h2 { font-size: clamp(1.6rem, 5vw, 2.5rem); }
+        .product-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: clamp(20px, 3vw, 40px); }
+        .product-card { animation: rise .7s both; animation-delay: calc(var(--i, 0) * 90ms); }
+        @keyframes rise { from { opacity: 0; transform: translateY(24px); } }
+        .img-wrap { aspect-ratio: 3/4; overflow: hidden; background: linear-gradient(135deg, #f3ecd6, #e9e9e9); }
+        .product-img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .8s; }
+        .btn-vip { min-height: 44px; }
+        .btn-vip:focus-visible, input:focus-visible, select:focus-visible, .float-btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+        @media (hover: hover) { .product-card:hover .product-img { transform: scale(1.06); } }
+        @media (hover: none) { .product-card:hover { transform: none; box-shadow: none; } }
 
-        footer { background: var(--black); color: var(--white); padding: 50px 5% 30px; text-align: center; position: relative;}
-        
-        /* CSS CHO NÚT MẠNG XÃ HỘI */
-        .social-buttons { display: flex; justify-content: center; gap: 15px; margin: 25px 0; }
-        .btn-social { padding: 10px 20px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 0.9rem; transition: 0.3s; display: flex; align-items: center; gap: 8px; color: var(--white); }
-        .btn-fb { background: #1877F2; }
-        .btn-fb:hover { background: #0c5dc7; }
-        .btn-zalo { background: #0068ff; }
-        .btn-zalo:hover { background: #0052cc; }
+        .toolbar { display: flex; gap: 12px; flex-wrap: wrap; padding: 0 5% 30px; max-width: 900px; margin: 0 auto; }
+        .search { position: relative; flex: 1 1 240px; }
+        .search i { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: var(--gold); }
+        .search input, .toolbar select, .modal input { width: 100%; padding: 13px 16px; border: 1px solid #ddd; border-radius: 0; font: inherit; font-size: 16px; background: #fff; }
+        .search input { padding-left: 44px; }
+        .toolbar select { flex: 0 1 200px; width: auto; }
+        .sk { aspect-ratio: 3/4.6; background: linear-gradient(100deg, #eee 30%, #f8f8f8 50%, #eee 70%) 0 0/200% 100%; animation: sh 1.2s infinite; }
+        @keyframes sh { to { background-position: -200% 0; } }
+        .empty { grid-column: 1/-1; text-align: center; color: #888; font-style: italic; padding: 40px 0; }
 
-        /* NÚT ADMIN BÍ MẬT */
-        .admin-secret-btn { position: absolute; bottom: 10px; right: 20px; color: #333; font-size: 1.2rem; text-decoration: none; opacity: 0.3; transition: 0.3s; }
-        .admin-secret-btn:hover { opacity: 1; color: var(--gold); }
+        [hidden] { display: none !important; }
+        .modal { position: fixed; inset: 0; z-index: 2000; background: rgba(0,0,0,.6); backdrop-filter: blur(4px); display: flex; align-items: center; justify-content: center; padding: 16px; }
+        .modal-box { background: #fff; width: min(100%, 440px); padding: 36px 28px 28px; position: relative; border-top: 3px solid var(--gold); max-height: 100%; overflow: auto; animation: rise .35s both; }
+        .modal-x { position: absolute; top: 6px; right: 10px; border: 0; background: none; font-size: 2rem; line-height: 1; padding: 8px; cursor: pointer; }
+        .modal h3 { font-size: 1.5rem; margin-bottom: 6px; }
+        #m-prod { color: var(--gold); font-weight: 600; margin-bottom: 18px; }
+        .modal label { display: block; font-size: .8rem; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 14px; }
+        .modal input { margin-top: 6px; }
+        #m-err { color: #c0392b; font-size: .85rem; min-height: 1.2em; margin-bottom: 8px; }
+        .modal .btn-vip { width: 100%; margin-top: 4px; }
+        #m-ok { text-align: center; }
+        #m-ok i { font-size: 3rem; color: var(--gold); margin-bottom: 12px; }
+
+        @media (max-width: 600px) {
+            .nav-links span { font-size: .7rem !important; }
+            .logo { font-size: 1.2rem; }
+            .floating-contact { left: 14px; bottom: calc(18px + env(safe-area-inset-bottom)); gap: 10px; }
+            .float-btn { width: 48px; height: 48px; font-size: 1.3rem; }
+            #fomo-popup { left: 14px; right: 14px; bottom: calc(84px + env(safe-area-inset-bottom)); }
+            .modal { align-items: flex-end; padding: 0; }
+            .modal-box { width: 100%; padding-bottom: calc(28px + env(safe-area-inset-bottom)); }
+        }
+        @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+
+        /* ===== BÁN NHANH: thanh liên hệ cố định, form gọn, tải nhẹ ===== */
+        [data-aos] { opacity: 0; transform: translateY(24px); transition: opacity .9s, transform .9s, background .3s, color .3s; }
+        [data-aos].in { opacity: 1; transform: none; }
+        .nav-links a { color: var(--gold); font-size: .8rem; letter-spacing: 1px; font-weight: 600; text-decoration: none; padding: 10px 0; display: inline-block; }
+        .btn-zalo { background: #0068FF; font-size: .8rem; font-weight: 700; }
+        .m-item { display: flex; gap: 14px; align-items: center; margin-bottom: 18px; }
+        .m-item img { width: 64px; height: 86px; object-fit: cover; background: #eee; }
+        #m-prod { display: block; color: var(--black); margin: 0 0 4px; font-family: 'Playfair Display', serif; font-size: 1.1rem; }
+        #m-price { color: var(--gold); font-weight: 600; }
+        .modal a.btn-vip { display: block; text-align: center; text-decoration: none; margin-bottom: 10px; }
+        .buybar { display: none; }
+        @media (max-width: 700px) {
+            .hero { background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=70'); }
+        }
+        @media (max-width: 600px) {
+            .nav-links a { font-size: .7rem; }
+            .floating-contact { display: none; }
+            body { padding-bottom: calc(60px + env(safe-area-inset-bottom)); }
+            .buybar { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 998; background: var(--black); border-top: 1px solid var(--gold); padding-bottom: env(safe-area-inset-bottom); }
+            .buybar a { flex: 1; min-height: 56px; display: flex; align-items: center; justify-content: center; gap: 8px; color: #fff; text-decoration: none; font-size: .8rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+            .buybar a + a { border-left: 1px solid #333; }
+            .buybar .go { background: var(--gold); color: var(--black); }
+        }
     </style>
 </head>
 <body>
 
     <header>
         <a href="#" class="logo">HOÀNG <span>OANH</span></a>
-        <span style="color: var(--gold); font-weight: 600;"><i class="fa-brands fa-zalo"></i> 0978 612 816</span>
+        <div class="nav-links">
+            <a href="tel:0978612816"><i class="fa-solid fa-phone"></i> HOTLINE: 0978 612 816</a>
+        </div>
     </header>
-
-    <div id="cart-floating-btn" onclick="openCharAI()">
-        <i class="fa-solid fa-bag-shopping"></i>
-        <div class="cart-count" id="cart-counter">0</div>
-    </div>
 
     <section class="hero">
         <p data-aos="fade-up">Khẳng định phong cách thượng lưu</p>
@@ -123,217 +171,231 @@
         <a href="#san-pham" class="btn-vip" data-aos="fade-up" data-aos-delay="400">KHÁM PHÁ BỘ SƯU TẬP</a>
     </section>
 
+    <section class="privileges">
+        <div class="priv-item" data-aos="fade-up">
+            <i class="fa-solid fa-gem"></i>
+            <h3>Thiết Kế Độc Bản</h3>
+            <p>Mỗi trang phục là một tác phẩm nghệ thuật dành riêng cho bạn.</p>
+        </div>
+        <div class="priv-item" data-aos="fade-up" data-aos-delay="200">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>Thử Đồ Tại Gia</h3>
+            <p>Giao hàng hỏa tốc, thử đồ tận nơi trong nội thành.</p>
+        </div>
+        <div class="priv-item" data-aos="fade-up" data-aos-delay="400">
+            <i class="fa-solid fa-headset"></i>
+            <h3>Tư Vấn VIP 1-1</h3>
+            <p>Đội ngũ stylist riêng phục vụ quý khách 24/7.</p>
+        </div>
+    </section>
+
     <section id="san-pham">
-        <div class="section-title"><h2>THIẾT KẾ MỚI NHẤT</h2></div>
+        <div class="section-title">
+            <h2 data-aos="fade-right">THIẾT KẾ MỚI NHẤT</h2>
+        </div>
+        <div class="toolbar">
+            <div class="search"><i class="fa-solid fa-magnifying-glass"></i><input id="q" type="search" placeholder="Tìm thiết kế..." aria-label="Tìm sản phẩm" autocomplete="off"></div>
+            <select id="sort" aria-label="Sắp xếp"><option value="new">Mới nhất</option><option value="asc">Giá thấp → cao</option><option value="desc">Giá cao → thấp</option></select>
+        </div>
         <div class="product-grid" id="product-container">
-            <p style="text-align: center; grid-column: 1/-1; color: var(--gold);">Đang tải dữ liệu từ kho...</p>
+            <p style="text-align: center; grid-column: 1/-1; color: var(--gold); font-style: italic;">Đang chuẩn bị các thiết kế tuyệt đẹp từ kho dữ liệu...</p>
         </div>
     </section>
 
-    <section class="feedback-section">
-        <div class="section-title"><h2>QUÝ CÔ HOÀNG OANH</h2></div>
-        <div class="feedback-container">
-            <div class="feedback-card">
-                <p>"Chất lụa thực sự xuất sắc, dáng váy tôn eo chuẩn xác. Lần đầu tôi mua online mà vừa in như may đo trực tiếp vậy. Rất đẳng cấp!"</p>
-                <div class="feedback-author"><i class="fa-solid fa-star"></i> Nữ Doanh Nhân Lan Ngọc</div>
-            </div>
-            <div class="feedback-card">
-                <p>"Char AI tính size rất hay, mình không cần mất thời gian chọn. Váy nhận được bọc gói thơm phức, thiết kế sang trọng mặc đi tiệc ai cũng hỏi."</p>
-                <div class="feedback-author"><i class="fa-solid fa-star"></i> Chị Bích Phương - TP.HCM</div>
-            </div>
-            <div class="feedback-card">
-                <p>"Dịch vụ chăm sóc 1-1 qua Zalo quá tuyệt vời. Cảm giác được phục vụ như một Thượng khách thực sự. Sẽ ủng hộ shop dài dài."</p>
-                <div class="feedback-author"><i class="fa-solid fa-star"></i> Chị Thu Trang - Hà Nội</div>
-            </div>
-        </div>
-    </section>
-
-    <div id="char-ai-overlay">
-        <div class="char-box">
-            <i class="fa-solid fa-xmark char-close" onclick="closeCharAI()"></i>
-            
-            <div class="cart-section">
-                <h3>Tủ Đồ Của Quý Khách</h3>
-                <div id="cart-items-container">
-                    <p style="color: #888; font-style: italic;">Tủ đồ đang trống.</p>
-                </div>
-                <div class="cart-total" id="cart-total-box" style="display: none;">
-                    Tổng cộng: <span id="cart-total-price">0 đ</span>
-                </div>
-                <div class="scarcity-warning"><i class="fa-regular fa-clock"></i> Cảnh báo: Các thiết kế độc bản trong tủ đồ sẽ tự động làm mới sau 30 phút. Vui lòng chốt đơn ngay!</div>
-            </div>
-
-            <div class="ai-section">
-                <div class="char-header">
-                    <h3>Char AI Stylist</h3>
-                    <p>Cô ấy đang tính toán tổng hóa đơn và kích cỡ cho quý khách...</p>
-                </div>
-                <div class="input-group">
-                    <label>Tên Quý Khách</label>
-                    <input type="text" id="char-ten" placeholder="Nhập tên của quý khách...">
-                </div>
-                <div class="input-group">
-                    <label>Số Điện Thoại Zalo</label>
-                    <input type="tel" id="char-sdt" placeholder="Để quản gia liên hệ...">
-                </div>
-                <div class="size-row">
-                    <div class="input-group" style="flex: 1;">
-                        <label>Chiều cao (cm)</label>
-                        <input type="number" id="char-cao" placeholder="VD: 160">
-                    </div>
-                    <div class="input-group" style="flex: 1;">
-                        <label>Cân nặng (kg)</label>
-                        <input type="number" id="char-nang" placeholder="VD: 52">
-                    </div>
-                </div>
-                <button class="btn-submit-char" onclick="xuLyChotDonToanBo()">GỬI YÊU CẦU ĐẶT HÀNG</button>
+    <div id="modal" class="modal" hidden>
+        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="m-title">
+            <button class="modal-x" id="m-close" aria-label="Đóng">&times;</button>
+            <form id="m-form" novalidate>
+                <h3 id="m-title">Nhận Tư Vấn VIP</h3>
+                <div class="m-item"><img id="m-img" alt="" width="64" height="86"><div><b id="m-prod"></b><span id="m-price"></span></div></div>
+                <label>Số điện thoại<input id="m-phone" required type="tel" inputmode="tel" maxlength="15" autocomplete="tel"></label>
+                <label>Tên của Quý khách (không bắt buộc)<input id="m-name" maxlength="80" autocomplete="name"></label>
+                <p id="m-err" role="alert"></p>
+                <button class="btn-vip" id="m-send" type="submit">GỬI YÊU CẦU TƯ VẤN</button>
+            </form>
+            <div id="m-ok" hidden>
+                <i class="fa-solid fa-circle-check"></i>
+                <h3>Cảm ơn Quý khách!</h3>
+                <p style="margin: 8px 0 16px;">Quản gia sẽ gọi lại ngay để xác nhận đơn hàng ạ.</p>
+                <a class="btn-vip" href="tel:0978612816">GỌI STYLIST NGAY</a>
+                <button class="btn-vip" id="m-done" style="background: transparent; color: var(--black);">ĐÓNG</button>
             </div>
         </div>
     </div>
+
+    <div class="floating-contact">
+        <a href="tel:0978612816" class="float-btn btn-phone" title="Gọi ngay Hotline VIP">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="https://zalo.me/0978612816" target="_blank" rel="noopener" class="float-btn btn-zalo" title="Chat Zalo">Zalo</a>
+        <a href="https://www.facebook.com/oanh.vo.92775838?locale=vi_VN" target="_blank" class="float-btn btn-facebook" title="Chat qua Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+    </div>
+
+    <div id="fomo-popup">
+        <img src="https://i.pravatar.cc/100" class="fomo-img" id="fomo-avatar">
+        <div class="fomo-text" id="fomo-content">
+            Chị <b>Mai Anh (Hà Nội)</b> vừa chốt đơn <br><b>Váy Lụa Hoàng Gia</b> cách đây 2 phút.
+        </div>
+    </div>
+
+    <nav class="buybar" aria-label="Liên hệ nhanh">
+        <a href="tel:0978612816"><i class="fa-solid fa-phone"></i> Gọi ngay</a>
+        <a href="https://zalo.me/0978612816" target="_blank" rel="noopener">Chat Zalo</a>
+        <a href="#san-pham" class="go">Chọn mẫu</a>
+    </nav>
 
     <footer>
-        <h2>HOÀNG OANH</h2>
-        <div class="social-buttons">
-            <a href="https://www.facebook.com/oanh.vo.92775838?locale=vi_VN" target="_blank" class="btn-social btn-fb"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
-            <a href="https://zalo.me/0978612816" target="_blank" class="btn-social btn-zalo"><i class="fa-solid fa-comment-dots"></i> Zalo</a>
+        <div class="footer-logo">HOÀNG OANH</div>
+        <p style="letter-spacing: 2px; font-size: 0.8rem;">BIỂU TƯỢNG CỦA SỰ QUYẾN RŨ</p>
+        <div class="contact-info">
+            <p><i class="fa-solid fa-location-dot"></i> Showroom: Số 123 Đường Fashion, TP. Hồ Chí Minh</p>
+            <p><i class="fa-solid fa-phone"></i> Hotline: 0978 612 816</p>
+            <p><i class="fa-brands fa-facebook"></i> Facebook: Hoang Oanh Luxury Fashion</p>
         </div>
-        
-        <p>© 2024 HOÀNG OANH Concepts. All Rights Reserved.</p>
-        
-        <a href="admin.html" class="admin-secret-btn" title="Khu vực Quản Trị Viên"><i class="fa-solid fa-lock"></i></a>
+        <p style="font-size: 0.7rem; color: #444; margin-top: 50px;">© <span id="yr">2026</span> HOÀNG OANH Concepts. All Rights Reserved.</p>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({ duration: 1000, once: true });
-
-        const _db = supabase.createClient('https://vxdilwkywzdomqgbngcb.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ4ZGlsd2t5d3pkb21xZ2JuZ2NiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY3NDMwOTIsImV4cCI6MjA5MjMxOTA5Mn0.yXx974hiKpMBwEGuuP89QsFttqvojl-aRex7rordZ00');
-
-        let gioHang = [];
-
-        async function loadProducts() {
-            const { data, error } = await _db.from('san_pham').select('*').order('created_at', { ascending: false });
-            if (error) return;
-            const container = document.getElementById('product-container');
-            container.innerHTML = ''; 
-            data.forEach((p, i) => {
-                let ribbonHtml = (i % 2 === 0) ? '<div class="ribbon">ĐỘC BẢN CÒN 2</div>' : '';
-
-                container.innerHTML += `
-                    <div class="product-card" data-aos="zoom-in" data-aos-delay="${(i % 3) * 200}">
-                        ${ribbonHtml}
-                        <div class="img-container">
-                            <img src="${p.hinh_anh}" class="product-img">
-                        </div>
-                        <div class="product-info">
-                            <h3>${p.ten}</h3><p class="product-price">${p.gia}</p>
-                            <button class="btn-vip" onclick="themVaoTuDo('${p.ten}', '${p.gia}')">THÊM VÀO TỦ ĐỒ</button>
-                        </div>
-                    </div>`;
-            });
-        }
-
-        function chuyenGiaThanhSo(giaChuoi) { return parseInt(giaChuoi.replace(/[^0-9]/g, '')) || 0; }
-        function formatTien(so) { return so.toLocaleString('vi-VN') + ' đ'; }
-
-        function themVaoTuDo(ten, gia) {
-            gioHang.push({ ten: ten, gia: gia, giaSo: chuyenGiaThanhSo(gia) });
-            capNhatGiaoDienTuDo();
-            
-            let btn = event.target;
-            let originalText = btn.innerHTML;
-            btn.innerHTML = '<i class="fa-solid fa-check"></i> ĐÃ THÊM';
-            btn.style.background = 'var(--gold)'; btn.style.color = 'var(--black)';
-            setTimeout(() => {
-                btn.innerHTML = originalText;
-                btn.style.background = 'var(--black)'; btn.style.color = 'var(--white)';
-            }, 1000);
-        }
-
-        function xoaKhoiTuDo(index) { gioHang.splice(index, 1); capNhatGiaoDienTuDo(); }
-
-        function capNhatGiaoDienTuDo() {
-            document.getElementById('cart-counter').innerText = gioHang.length;
-            const container = document.getElementById('cart-items-container');
-            const totalBox = document.getElementById('cart-total-box');
-            
-            if (gioHang.length === 0) {
-                container.innerHTML = '<p style="color: #888; font-style: italic;">Tủ đồ đang trống.</p>';
-                totalBox.style.display = 'none'; return;
-            }
-
-            let html = ''; let tongTien = 0;
-            gioHang.forEach((item, index) => {
-                html += `<div class="cart-item">
-                            <div><b>${item.ten}</b> <br><span style="color: var(--gold);">${item.gia}</span></div>
-                            <i class="fa-solid fa-trash remove-btn" onclick="xoaKhoiTuDo(${index})"></i>
-                        </div>`;
-                tongTien += item.giaSo;
-            });
-
-            container.innerHTML = html;
-            document.getElementById('cart-total-price').innerText = formatTien(tongTien);
-            totalBox.style.display = 'block';
-        }
-
-        function openCharAI() { document.getElementById('char-ai-overlay').classList.add('active'); }
-        function closeCharAI() { document.getElementById('char-ai-overlay').classList.remove('active'); }
-
-        async function xuLyChotDonToanBo() {
-            if (gioHang.length === 0) { alert("Dạ, tủ đồ đang trống ạ!"); return closeCharAI(); }
-
-            const ten = document.getElementById('char-ten').value.trim();
-            const sdt = document.getElementById('char-sdt').value.trim();
-            const cao = document.getElementById('char-cao').value;
-            const nang = document.getElementById('char-nang').value;
-
-            if (!ten || !sdt || !cao || !nang) { alert("Vui lòng điền đủ thông tin để hoàn tất đơn ạ!"); return; }
-
-            let size = "M"; const bmi = nang / ((cao/100) * (cao/100));
-            if (nang < 48 || bmi < 18.5) size = "S"; else if (nang > 55 && nang <= 62) size = "L"; else if (nang > 62) size = "XL";
-
-            let danhSachMua = gioHang.map(item => `- ${item.ten} (${item.gia})`).join('\n');
-            let tongTienCuoi = document.getElementById('cart-total-price').innerText;
-            const chiTietDon = `MUA CÁC MÓN:\n${danhSachMua}\n=> TỔNG: ${tongTienCuoi}\n[Cao: ${cao}cm, Nặng: ${nang}kg -> Size: ${size}]`;
-
-            const btn = document.querySelector('.btn-submit-char'); btn.innerHTML = 'ĐANG XỬ LÝ...';
-            
-            const { error } = await _db.from('don_hang').insert([{ ten_khach: ten, so_dt: sdt, ten_san_pham: chiTietDon }]);
-
-            if (!error) {
-                // Đổi thông báo chốt đơn sang hướng Gọi Điện Trực Tiếp
-                alert(`🎉 CHỐT ĐƠN THÀNH CÔNG!\n\nHệ thống đã nhận đơn hàng của ${ten}.\nĐể đảm bảo an toàn, chuyên viên của Hoàng Oanh Boutique sẽ GỌI ĐIỆN TRỰC TIẾP qua số ${sdt} cho bạn trong vòng 5 phút tới để xác nhận nhé!`);
-                
-                closeCharAI(); gioHang = []; capNhatGiaoDienTuDo();
-                document.querySelectorAll('.ai-section input').forEach(input => input.value = '');
-            } else alert("Hệ thống đang bận. Vui lòng thử lại!");("Hệ thống đang bận. Vui lòng thử lại!");
-            
-            btn.innerHTML = 'GỬI YÊU CẦU ĐẶT HÀNG';
-        }
-
-        loadProducts();
-
-        // ---------------------------------------------------------
-        // LỆNH BÍ MẬT CỦA BÀ CHỦ: NHẤN ALT + A ĐỂ VÀO TRANG ADMIN
-        // ---------------------------------------------------------
-        document.addEventListener('keydown', function(event) {
-            if (event.altKey && (event.key === 'a' || event.key === 'A')) {
-                window.location.href = 'admin.html';
-            }
+        // Hiệu ứng xuất hiện khi cuộn (nhẹ, không cần thư viện ngoài)
+        const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => {
+            if (!e.isIntersecting) return;
+            const t = e.target; t.classList.add('in'); io.unobserve(t);
+            setTimeout(() => { t.style.transitionDelay = ''; }, 1500);
+        }), { threshold: .15 }) : null;
+        document.querySelectorAll('[data-aos]').forEach(el => {
+            el.style.transitionDelay = (el.dataset.aosDelay || 0) + 'ms';
+            io ? io.observe(el) : el.classList.add('in');
         });
 
-    </script>
-    </body>
-<style>
-        .contact-widgets { position: fixed; bottom: 20px; left: 20px; display: flex; flex-direction: column; gap: 15px; z-index: 9999; }
-        .widget-btn { width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: 0.3s; }
-        .btn-call { background: #00a854; } /* Màu xanh lá cho nút Gọi */
-        .btn-mess { background: #0068ff; } /* Màu xanh dương cho nút Messenger */
-        .widget-btn:hover { transform: scale(1.1); color: white; }
-    </style>
+        // ===== KẾT NỐI GOOGLE SHEETS =====
+        // Sau khi triển khai Apps Script, dán địa chỉ Web App (kết thúc bằng /exec) vào đây
+        const API_URL = 'https://script.google.com/macros/s/AKfycbzJhGs835s1DjxS4HwqfXJgqS9QTivgufnS5S1okYzN2JaKtS6FRNoG5TYoNBC6Z_TK/exec';
 
-    <div class="contact-widgets">
-        <a href="tel:0978612816" class="widget-btn btn-call" title="Gọi điện ngay"><i class="fa-solid fa-phone-volume"></i></a>
-        <a href="https://m.me/hoangoanhboutique" target="_blank" class="widget-btn btn-mess" title="Chat Messenger"><i class="fa-brands fa-facebook-messenger"></i></a>
-    </div>
+        // Chống chèn mã độc khi in dữ liệu ra trang
+        const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+        // Cho phép dán link chia sẻ Google Drive làm ảnh sản phẩm; chỉ nhận link http(s)
+        function fixImg(u) {
+            u = String(u || '').trim();
+            const m = u.match(/drive\.google\.com\/file\/d\/([\w-]+)/) || u.match(/drive\.google\.com\/(?:open|uc)\?(?:[^#]*&)?id=([\w-]+)/);
+            if (m) return `https://drive.google.com/thumbnail?id=${m[1]}&sz=w1000`;
+            return /^https?:\/\//i.test(u) ? u : '';
+        }
+
+        async function guiApi(body) {
+            const res = await fetch(API_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'text/plain;charset=utf-8' },   // giữ "text/plain" để trình duyệt không chặn
+                body: JSON.stringify(body)
+            });
+            return res.json();
+        }
+
+        // ===== DANH SÁCH SẢN PHẨM: hiện nhanh từ bộ nhớ máy, rồi cập nhật bản mới nhất =====
+        const $ = id => document.getElementById(id);
+        let ALL = [], fresh = false;
+        const tien = p => parseInt(String(p.gia).replace(/\D/g, ''), 10) || 0;
+
+        function render() {
+            const q = $('q').value.trim().toLowerCase(), k = $('sort').value;
+            let d = ALL.filter(p => p.ten.toLowerCase().includes(q));
+            if (k === 'asc') d = [...d].sort((a, b) => tien(a) - tien(b));
+            if (k === 'desc') d = [...d].sort((a, b) => tien(b) - tien(a));
+            $('product-container').innerHTML = d.length ? d.map((p, i) => `
+                <article class="product-card" style="--i:${i % 6}">
+                    <div class="img-wrap"><img src="${esc(fixImg(p.hinh_anh))}" class="product-img" alt="${esc(p.ten)}" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div>
+                    <div class="product-info">
+                        <h3>${esc(p.ten)}</h3>
+                        <p class="product-price">${esc(p.gia)}</p>
+                        <button class="btn-vip" data-id="${esc(p.id)}" data-ten="${esc(p.ten)}">ĐẶT MUA NGAY</button>
+                    </div>
+                </article>`).join('')
+                : `<p class="empty">${ALL.length ? 'Không tìm thấy thiết kế phù hợp.' : 'Kho hàng đang được cập nhật thêm mẫu mới...'}</p>`;
+        }
+
+        async function loadProducts() {
+            $('product-container').innerHTML = '<div class="sk"></div>'.repeat(3);
+            try { const c = JSON.parse(localStorage.getItem('ho_sp') || 'null'); if (c) { ALL = c; render(); } } catch (e) {}
+            try {
+                if (API_URL.startsWith('DAN_')) throw new Error('Chưa dán API_URL');
+                const j = await (await fetch(API_URL + '?action=products')).json();
+                if (!j.ok) throw new Error(j.error);
+                ALL = j.data; fresh = true; render();
+                try { localStorage.setItem('ho_sp', JSON.stringify(ALL)); } catch (e) {}
+            } catch (err) {
+                console.error(err);
+                if (!ALL.length) $('product-container').innerHTML = '<p class="empty">Chưa tải được danh sách sản phẩm. Quý khách vui lòng tải lại trang hoặc gọi Hotline giúp Shop ạ.</p>';
+            }
+        }
+        $('q').addEventListener('input', render);
+        $('sort').addEventListener('change', render);
+
+        // ===== FORM ĐẶT HÀNG (thay cho hộp thoại prompt cũ) =====
+        let cur = null, lastFocus = null;
+        function openModal(id) {
+            if (!fresh) { alert('Đang cập nhật bảng giá mới nhất, Quý khách vui lòng đợi giây lát rồi bấm lại ạ.'); return; }
+            cur = id; lastFocus = document.activeElement;
+            const p = ALL.find(x => String(x.id) === String(id)) || {}, im = fixImg(p.hinh_anh);
+            $('m-prod').textContent = p.ten || ''; $('m-price').textContent = p.gia || ''; $('m-img').hidden = !im; if (im) $('m-img').src = im;
+            $('m-err').textContent = '';
+            $('m-form').hidden = false; $('m-ok').hidden = true;
+            try { $('m-name').value = localStorage.getItem('ho_n') || ''; $('m-phone').value = localStorage.getItem('ho_p') || ''; } catch (e) {}
+            $('modal').hidden = false; document.body.style.overflow = 'hidden';
+            setTimeout(() => $('m-phone').focus(), 50);
+        }
+        function closeModal() { $('modal').hidden = true; document.body.style.overflow = ''; if (lastFocus) lastFocus.focus(); }
+
+        $('product-container').addEventListener('click', e => {
+            const b = e.target.closest('.btn-vip');
+            if (b) openModal(b.dataset.id);
+        });
+        $('m-close').onclick = $('m-done').onclick = closeModal;
+        $('modal').addEventListener('click', e => { if (e.target === $('modal')) closeModal(); });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('modal').hidden) closeModal(); });
+
+        $('m-form').addEventListener('submit', async e => {
+            e.preventDefault();
+            const ten = $('m-name').value.trim() || 'Khách VIP', sdt = $('m-phone').value.trim(), err = $('m-err'), btn = $('m-send');
+            if (!/^\+?[0-9][0-9 .\-]{7,14}$/.test(sdt)) { err.textContent = 'Số điện thoại chưa đúng, Quý khách kiểm tra lại giúp Shop ạ.'; return; }
+            btn.disabled = true; btn.textContent = 'ĐANG GỬI...'; err.textContent = '';
+            try {
+                const j = await guiApi({ action: 'order', id_sp: cur, ten_khach: ten, so_dt: sdt });
+                if (!j.ok) throw new Error(j.error);
+                try { localStorage.setItem('ho_n', ten); localStorage.setItem('ho_p', sdt); } catch (e2) {}
+                $('m-form').hidden = true; $('m-ok').hidden = false;
+            } catch (e3) {
+                err.textContent = (e3.message && e3.message !== 'Failed to fetch') ? e3.message : 'Chưa gửi được đơn. Quý khách thử lại hoặc gọi Hotline 0978 612 816 giúp Shop ạ.';
+            } finally { btn.disabled = false; btn.textContent = 'GỬI YÊU CẦU TƯ VẤN'; }
+        });
+
+        // HIỆU ỨNG FOMO. Hiện đang TẮT vì đây là đơn mua giả; đổi thành true nếu muốn bật lại
+        const BAT_THONG_BAO_FOMO = false;
+        const fomoList = [
+            {name: "Chị Ngọc Lan", city: "TP.HCM", prod: "Đầm Dạ Hội Gold Silk"},
+            {name: "Chị Thu Trang", city: "Đà Nẵng", prod: "Váy Lụa Hoàng Gia"},
+            {name: "Chị Bích Phương", city: "Hà Nội", prod: "Vest Luxury White"},
+            {name: "Chị Minh Thư", city: "Vũng Tàu", prod: "Đầm Dạ Hội Gold Silk"}
+        ];
+
+        function showFomo() {
+            const random = fomoList[Math.floor(Math.random() * fomoList.length)];
+            const popup = document.getElementById('fomo-popup');
+            document.getElementById('fomo-avatar').src = `https://i.pravatar.cc/100?u=${Math.random()}`;
+            document.getElementById('fomo-content').innerHTML = `<b>${random.name} (${random.city})</b> vừa chốt đơn <br><b>${random.prod}</b> 2 phút trước.`;
+            
+            popup.classList.add('active');
+            setTimeout(() => popup.classList.remove('active'), 5000);
+        }
+
+        // Chạy các hàm khi mở web
+        $('yr').textContent = new Date().getFullYear();
+        loadProducts();
+        if (BAT_THONG_BAO_FOMO) {
+            setInterval(showFomo, 30000);
+            setTimeout(showFomo, 5000);
+        }
+    </script>
+</body>
 </html>

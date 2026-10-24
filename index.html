@@ -8,12 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://script.google.com">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230a0a0a'/%3E%3Ctext x='32' y='43' font-size='34' text-anchor='middle' fill='%23D4AF37' font-family='serif'%3EHO%3C/text%3E%3C/svg%3E">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"HOÀNG OANH","telephone":"+84978612816","description":"Thời trang thượng lưu, thiết kế độc bản, stylist tư vấn riêng 1-1."}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"HOÀNG OANH","telephone":"+84978612816","description":"Thời trang nữ trẻ trung, chọn mẫu và chốt đơn nhanh qua Zalo."}</script>
     <noscript><style>[data-aos]{opacity:1!important;transform:none!important}</style></noscript>
-    <meta name="description" content="HOÀNG OANH - thời trang thượng lưu, thiết kế độc bản, stylist tư vấn riêng 1-1.">
-    <meta property="og:title" content="HOÀNG OANH | Đẳng Cấp & Tinh Tế">
+    <meta name="description" content="HOÀNG OANH - thời trang nữ trẻ trung, chọn mẫu và chốt đơn nhanh qua Zalo.">
+    <meta property="og:title" content="HOÀNG OANH | Thời Trang Nữ">
     <meta property="og:description" content="Thiết kế độc bản, thử đồ tại gia, tư vấn VIP 1-1.">
-    <title>HOÀNG OANH | Đẳng Cấp & Tinh Tế</title>
+    <title>HOÀNG OANH | Thời Trang Nữ</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
@@ -154,6 +154,159 @@
             .buybar a + a { border-left: 1px solid #333; }
             .buybar .go { background: var(--gold); color: var(--black); }
         }
+
+        /* ===== QUIET LUXURY: kem ngà, nhiều khoảng trắng, vàng chỉ làm điểm nhấn ===== */
+        :root { --gold: #a58a52; --black: #1c1a17; --cream: #f6f1e9; --line: #e3dccf; }
+        body { background: var(--cream); }
+        header { background: rgba(246,241,233,.92); box-shadow: none; border-bottom: 1px solid var(--line); }
+        .logo span { font-weight: 400; }
+        .hero h1 { font-weight: 400; }
+        .hero p { color: #e8d9b5; }
+        .privileges { background: var(--cream); color: var(--black); border-block: 1px solid var(--line); }
+        .priv-item p { color: #6f685c; }
+        .section-title h2 { font-weight: 400; letter-spacing: 4px; }
+        .product-card { background: transparent; border: 0; text-align: left; padding: 0; cursor: pointer; }
+        .product-card:hover { transform: none; box-shadow: none; }
+        .product-info { padding: 14px 2px 0; }
+        .product-info h3 { font-size: 1.05rem; font-weight: 400; margin-bottom: 4px; }
+        .product-price { font-size: .95rem; letter-spacing: 1px; }
+        .product-card.sold .img-wrap { opacity: .5; }
+        .tag { font-size: .7rem; letter-spacing: 1.5px; text-transform: uppercase; color: #8a8174; }
+        .search input, .toolbar select, .modal input { background: #fff; border-color: var(--line); }
+        .chips { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; padding: 0 5% 28px; }
+        .chip { border: 1px solid var(--line); background: transparent; padding: 9px 18px; min-height: 40px; font: inherit; font-size: .75rem; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; }
+        .chip.on { background: var(--black); color: #fff; border-color: var(--black); }
+        .band { padding-bottom: 40px; }
+        .rv-grid, .pol-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 28px; padding: 0 5%; max-width: 1100px; margin: 0 auto; }
+        blockquote, .pol-grid div { border-top: 1px solid var(--gold); padding-top: 16px; }
+        blockquote p { font-family: 'Playfair Display', serif; font-style: italic; line-height: 1.6; }
+        blockquote cite { display: block; margin-top: 10px; font: normal .75rem 'Montserrat', sans-serif; letter-spacing: 2px; text-transform: uppercase; color: #6f685c; }
+        .pol-grid h3 { font-size: 1rem; margin-bottom: 8px; }
+        .pol-grid p { font-size: .85rem; line-height: 1.7; color: #4a443a; white-space: pre-line; }
+        .modal-box.wide { width: min(100%, 920px); padding: 0; display: grid; grid-template-columns: 1fr 1fr; border-top: 0; }
+        .modal-x { z-index: 2; width: 40px; height: 40px; padding: 0; border-radius: 50%; background: rgba(246,241,233,.9); top: 10px; right: 10px; }
+        .m-gal { background: #efe8da; }
+        .m-gal > img { display: block; width: 100%; aspect-ratio: 3/4; object-fit: cover; }
+        #m-thumbs { display: flex; gap: 6px; padding: 6px; overflow-x: auto; }
+        #m-thumbs img { width: 56px; height: 74px; object-fit: cover; cursor: pointer; }
+        .m-side { padding: 36px 28px 28px; align-self: center; }
+        #m-prod { font-size: 1.5rem; }
+        #m-price { display: block; margin-bottom: 14px; }
+        #m-desc { white-space: pre-line; font-size: .9rem; line-height: 1.7; color: #4a443a; margin-bottom: 18px; }
+        @media (max-width: 700px) {
+            .modal-box.wide { grid-template-columns: 1fr; max-height: 92vh; overflow-y: auto; }
+            .m-gal > img { aspect-ratio: 4/5; }
+            .m-side { padding: 22px 20px calc(24px + env(safe-area-inset-bottom)); }
+        }
+
+        /* ===== BANNER: thiết kế sẵn, không dùng ảnh mạng ===== */
+        section.hero { display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: clamp(28px, 5vw, 72px); text-align: left; color: var(--black); min-height: 88vh; min-height: 88svh; padding: 120px 7% 64px; background: radial-gradient(circle at 78% 28%, #efe3c8 0, transparent 55%), var(--cream); }
+        .hero-copy { max-width: 560px; justify-self: start; }
+        section.hero .eyebrow { color: var(--gold); font-size: .78rem; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 22px; }
+        section.hero h1 { font-size: clamp(2.6rem, 6.4vw, 5.2rem); line-height: 1.05; font-weight: 400; letter-spacing: 0; margin-bottom: 22px; }
+        section.hero h1 em { color: var(--gold); font-weight: 400; }
+        section.hero .hero-sub { font-size: .95rem; line-height: 1.8; letter-spacing: 0; text-transform: none; color: #5a5348; max-width: 440px; margin-bottom: 30px; }
+        .hero-cta { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+        .hero-cta .btn-vip { margin-top: 0; }
+        .hero-cta .link { color: var(--black); font-size: .78rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; border-bottom: 1px solid var(--gold); padding: 10px 0 4px; }
+        .hero-art { display: flex; justify-content: center; align-items: center; }
+        .arch { position: relative; width: min(100%, 380px); aspect-ratio: 3/4.2; border-radius: 999px 999px 0 0; overflow: hidden; background: linear-gradient(160deg, #f4ead3, #e6d6b0); box-shadow: 0 0 0 10px var(--cream), 0 0 0 11px var(--gold); }
+        .arch svg, .arch img { position: absolute; inset: 0; width: 100%; height: 100%; }
+        .arch img { object-fit: cover; }
+        @media (max-width: 800px) {
+            section.hero { grid-template-columns: 1fr; text-align: center; padding: 96px 7% 48px; min-height: 0; }
+            .hero-copy { justify-self: center; }
+            .hero-cta { justify-content: center; }
+            section.hero .hero-sub { margin-inline: auto; }
+            .arch { width: min(72%, 300px); margin: 12px auto 0; }
+        }
+
+        /* ===== TRẺ TRUNG "ĐÀO NGỌT" + BANNER 3 KHUNG ẢNH ===== */
+        :root { --gold: #DC4A39; --black: #4A2B27; --cream: #FFF1E8; --line: #F4D9CB; }
+        header { background: rgba(255,241,232,.94); }
+        .btn-vip { background: var(--gold); border-color: var(--gold); color: #fff; border-radius: 30px; }
+        .btn-vip:hover { background: transparent; color: var(--gold); }
+        section.hero { grid-template-columns: minmax(240px, 330px) 1fr; gap: clamp(24px, 4vw, 56px); min-height: 0; padding: 112px 4% 56px; background: linear-gradient(180deg, #FFF1E8, #FFE4D6); }
+        .hero-copy { justify-self: start; max-width: 330px; }
+        section.hero .eyebrow { color: var(--gold); font-weight: 700; }
+        section.hero h1 { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: clamp(2.4rem, 4.6vw, 4rem); line-height: 1.05; }
+        .hero-photos { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(12px, 2vw, 24px); align-items: end; min-width: 0; }
+        .ph { position: relative; margin: 0; aspect-ratio: 3/4.2; border-radius: clamp(80px, 12vw, 170px) clamp(80px, 12vw, 170px) 22px 22px; overflow: hidden; background: #FFD3C4; box-shadow: 0 14px 30px rgba(74,43,39,.15); }
+        .ph:nth-child(2) { margin-bottom: 28px; }
+        .ph img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 14%; }
+        .ph figcaption { position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%); background: #FFD45E; color: var(--black); font-size: .72rem; font-weight: 800; letter-spacing: 1px; padding: 6px 14px; border-radius: 14px; white-space: nowrap; }
+        @media (max-width: 800px) {
+            section.hero { grid-template-columns: 1fr; text-align: center; padding: 96px 0 40px; }
+            .hero-copy { justify-self: center; padding: 0 7%; }
+            .hero-photos { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 12px; padding: 4px 7% 18px; scrollbar-width: none; }
+            .hero-photos::-webkit-scrollbar { display: none; }
+            .ph { flex: 0 0 74%; scroll-snap-align: center; border-radius: 120px 120px 22px 22px; }
+            .ph:nth-child(2) { margin-bottom: 0; }
+        }
+
+        /* ===== BANNER ẢNH: khung 9:16 để thấy trọn người; điện thoại mỗi lần hiện TRỌN 1 ảnh, không ló ảnh kế bên ===== */
+        .ph { aspect-ratio: 9/16; }
+        .ph img { object-position: 50% 4%; }
+        .dots { display: none; }
+        @media (max-width: 800px) {
+            .hero-photos { padding: 0; gap: 0; }
+            .ph { flex: 0 0 100%; width: 100%; aspect-ratio: auto; background: none; box-shadow: none; border-radius: 0; overflow: visible; display: flex; justify-content: center; margin: 0; }
+            .ph img { width: min(70%, 260px); height: auto; aspect-ratio: 9/16; border-radius: 999px 999px 22px 22px; box-shadow: 0 14px 30px rgba(74,43,39,.18); }
+            .ph figcaption { bottom: 16px; }
+            .dots { display: flex; justify-content: center; gap: 8px; padding-top: 4px; }
+            .dots i { width: 8px; height: 8px; border-radius: 50%; background: #F0BFB2; transition: .25s; }
+            .dots i.on { width: 22px; border-radius: 6px; background: var(--gold); }
+        }
+
+        /* ===== BANNER GIỚI THIỆU SHOP: chữ giới thiệu + 2 khung ảnh mẫu ===== */
+        section.hero { grid-template-columns: minmax(300px, 1fr) minmax(0, 620px); }
+        .hero-copy { max-width: 540px; }
+        section.hero h1 { font-size: clamp(2.3rem, 5vw, 4.2rem); letter-spacing: 1px; margin-bottom: 8px; }
+        .hero-tag { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: clamp(1rem, 1.8vw, 1.35rem); color: var(--gold); margin-bottom: 16px; }
+        section.hero .hero-sub { max-width: 500px; margin-bottom: 20px; }
+        .hero-info { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 26px; padding: 0; }
+        .hero-info li { display: flex; align-items: center; gap: 8px; background: #fff; border: 1px solid var(--line); border-radius: 30px; padding: 9px 14px; font-size: .82rem; font-weight: 600; }
+        .hero-info i { color: var(--gold); }
+        .hero-photos { grid-template-columns: repeat(2, 1fr); }
+        @media (max-width: 800px) {
+            section.hero { grid-template-columns: 1fr; }
+            .hero-info { justify-content: center; }
+        }
+
+        /* ===== CHỮ LỚN 3D VÀNG TRÊN NỀN ĐỎ RƯỢU VANG ===== */
+        section.hero { color: #F5E6D0; background: radial-gradient(circle at 76% 32%, #8a2a36 0, transparent 55%), linear-gradient(160deg, #3b0f14, #5a1822 60%, #2a0b0f); border-bottom: 3px solid #D8A94A; grid-template-columns: minmax(340px, 1fr) minmax(0, 560px); }
+        .hero-copy { max-width: 640px; }
+        section.hero .eyebrow { color: #E9C46A; font-size: clamp(.85rem, 1.2vw, 1rem); letter-spacing: 5px; }
+        section.hero h1.hero-3d { position: relative; font-size: clamp(2.6rem, 6.2vw, 5.4rem); line-height: 1.02; letter-spacing: 2px; margin-bottom: 14px; color: #7a4f0e;
+            text-shadow: 1px 1px 0 #8f5e10, 2px 2px 0 #8a5a10, 3px 3px 0 #825410, 4px 4px 0 #7a4f0e, 5px 5px 0 #724a0d, 6px 6px 0 #6a440c, 7px 7px 0 #623e0b, 9px 12px 16px rgba(0,0,0,.6); }
+        section.hero h1.hero-3d::after { content: attr(data-t); position: absolute; inset: 0; text-shadow: none; -webkit-text-fill-color: transparent; color: transparent;
+            background: linear-gradient(180deg, #fff6d1 0%, #f9d86e 36%, #d99a1e 52%, #f6cf55 70%, #b9801a 100%); -webkit-background-clip: text; background-clip: text; }
+        .hero-tag { color: #F7D98B; font-size: clamp(1.25rem, 2.5vw, 2rem); text-shadow: 0 2px 0 rgba(0,0,0,.45), 0 5px 12px rgba(0,0,0,.4); }
+        section.hero .hero-sub { color: #F5E6D0; font-size: clamp(1rem, 1.5vw, 1.2rem); line-height: 1.75; max-width: 560px; }
+        .hero-info li { background: rgba(255,255,255,.08); border-color: #D8A94A; color: #FBE7B2; font-size: clamp(.88rem, 1.2vw, 1rem); padding: 11px 18px; }
+        .hero-info i { color: #F2C14E; }
+        .hero-cta .btn-vip { background: linear-gradient(180deg, #ffe9a3, #e0a82e); border: 0; color: #3b0f14; font-size: 1rem; padding: 17px 32px; box-shadow: 0 4px 0 #8a5a10, 0 12px 20px rgba(0,0,0,.4); transition: transform .15s, box-shadow .15s; }
+        .hero-cta .btn-vip:hover { background: linear-gradient(180deg, #ffe9a3, #e0a82e); color: #3b0f14; transform: translateY(2px); box-shadow: 0 2px 0 #8a5a10, 0 8px 14px rgba(0,0,0,.4); }
+        .hero-cta .link { color: #F7D98B; border-bottom-color: #D8A94A; font-size: .9rem; }
+        .ph { background: #4a1822; box-shadow: 0 0 0 3px #E6B84F, 0 0 0 8px rgba(230,184,79,.22), 0 26px 44px rgba(0,0,0,.5); }
+        @media (max-width: 800px) {
+            section.hero { grid-template-columns: 1fr; }
+            section.hero h1.hero-3d { font-size: clamp(2.2rem, 10vw, 3.4rem); }
+            .ph { background: none; box-shadow: none; }
+            .ph img { box-shadow: 0 0 0 3px #E6B84F, 0 0 0 8px rgba(230,184,79,.22), 0 26px 44px rgba(0,0,0,.5); }
+            .dots i { background: #7a3a40; }
+            .dots i.on { background: #E6B84F; }
+        }
+        @media (max-width: 800px) { section.hero .eyebrow { letter-spacing: 2px; font-size: .8rem; } }
+
+        /* ===== BANNER LÀ ẢNH THIẾT KẾ CỦA CHỦ SHOP ===== */
+        .hero-banner { position: relative; margin-top: var(--hh, 68px); background: #3b0f14; line-height: 0; }
+        .hero-banner img { display: block; width: 100%; height: auto; }
+        .hit { position: absolute; display: block; border-radius: 40px; }
+        .hit:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+        .hit.mb { display: none; }
+        .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+        @media (max-width: 800px) { .hit.pc { display: none; } .hit.mb { display: block; } }
     </style>
 </head>
 <body>
@@ -165,10 +318,15 @@
         </div>
     </header>
 
-    <section class="hero">
-        <p data-aos="fade-up">Khẳng định phong cách thượng lưu</p>
-        <h1 data-aos="fade-up" data-aos-delay="200">ĐẲNG CẤP & TINH TẾ</h1>
-        <a href="#san-pham" class="btn-vip" data-aos="fade-up" data-aos-delay="400">KHÁM PHÁ BỘ SƯU TẬP</a>
+    <section class="hero-banner">
+        <h1 class="sr-only">HOÀNG OANH - Thời trang nữ, mặc đẹp mỗi ngày</h1>
+        <picture>
+            <source media="(max-width: 800px)" srcset="anh/banner-dien-thoai.jpg" width="933" height="892">
+            <img src="anh/banner-may-tinh.jpg" width="1925" height="633" alt="HOÀNG OANH - Thời trang nữ, mặc đẹp mỗi ngày. Giao hàng toàn quốc, đổi trả dễ dàng, tư vấn miễn phí. Gọi 0978 612 816." fetchpriority="high">
+        </picture>
+        <a class="hit pc" href="#san-pham" aria-label="Xem bộ sưu tập" style="left:5.45%;top:79.62%;width:20.52%;height:11.06%"></a>
+        <a class="hit pc" href="tel:0978612816" aria-label="Gọi tư vấn 0978 612 816" style="left:27.58%;top:80.73%;width:12.83%;height:9.00%"></a>
+        <a class="hit mb" href="tel:0978612816" aria-label="Gọi ngay 0978 612 816" style="left:6.22%;top:87.89%;width:50.80%;height:8.18%"></a>
     </section>
 
     <section class="privileges">
@@ -197,28 +355,33 @@
             <div class="search"><i class="fa-solid fa-magnifying-glass"></i><input id="q" type="search" placeholder="Tìm thiết kế..." aria-label="Tìm sản phẩm" autocomplete="off"></div>
             <select id="sort" aria-label="Sắp xếp"><option value="new">Mới nhất</option><option value="asc">Giá thấp → cao</option><option value="desc">Giá cao → thấp</option></select>
         </div>
+        <div class="chips" id="chips"></div>
         <div class="product-grid" id="product-container">
             <p style="text-align: center; grid-column: 1/-1; color: var(--gold); font-style: italic;">Đang chuẩn bị các thiết kế tuyệt đẹp từ kho dữ liệu...</p>
         </div>
     </section>
 
     <div id="modal" class="modal" hidden>
-        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="m-title">
+        <div class="modal-box wide" role="dialog" aria-modal="true" aria-labelledby="m-prod">
             <button class="modal-x" id="m-close" aria-label="Đóng">&times;</button>
-            <form id="m-form" novalidate>
-                <h3 id="m-title">Nhận Tư Vấn VIP</h3>
-                <div class="m-item"><img id="m-img" alt="" width="64" height="86"><div><b id="m-prod"></b><span id="m-price"></span></div></div>
-                <label>Số điện thoại<input id="m-phone" required type="tel" inputmode="tel" maxlength="15" autocomplete="tel"></label>
-                <label>Tên của Quý khách (không bắt buộc)<input id="m-name" maxlength="80" autocomplete="name"></label>
-                <p id="m-err" role="alert"></p>
-                <button class="btn-vip" id="m-send" type="submit">GỬI YÊU CẦU TƯ VẤN</button>
-            </form>
-            <div id="m-ok" hidden>
-                <i class="fa-solid fa-circle-check"></i>
-                <h3>Cảm ơn Quý khách!</h3>
-                <p style="margin: 8px 0 16px;">Quản gia sẽ gọi lại ngay để xác nhận đơn hàng ạ.</p>
-                <a class="btn-vip" href="tel:0978612816">GỌI STYLIST NGAY</a>
-                <button class="btn-vip" id="m-done" style="background: transparent; color: var(--black);">ĐÓNG</button>
+            <div class="m-gal"><img id="m-img" alt=""><div id="m-thumbs"></div></div>
+            <div class="m-side">
+                <form id="m-form" novalidate>
+                    <h3 id="m-prod"></h3>
+                    <span id="m-price"></span>
+                    <p id="m-desc"></p>
+                    <label>Số điện thoại<input id="m-phone" required type="tel" inputmode="tel" maxlength="15" autocomplete="tel"></label>
+                    <label>Tên của Quý khách (không bắt buộc)<input id="m-name" maxlength="80" autocomplete="name"></label>
+                    <p id="m-err" role="alert"></p>
+                    <button class="btn-vip" id="m-send" type="submit">ĐẶT MUA NGAY</button>
+                </form>
+                <div id="m-ok" hidden>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>Cảm ơn Quý khách!</h3>
+                    <p style="margin: 8px 0 16px;">Quản gia sẽ gọi lại ngay để xác nhận đơn hàng ạ.</p>
+                    <a class="btn-vip" href="tel:0978612816">GỌI STYLIST NGAY</a>
+                    <button class="btn-vip" id="m-done" style="background: transparent; color: var(--black);">ĐÓNG</button>
+                </div>
             </div>
         </div>
     </div>
@@ -240,6 +403,9 @@
         </div>
     </div>
 
+    <section id="reviews" class="band" hidden><div class="section-title"><h2>KHÁCH HÀNG NÓI GÌ</h2></div><div id="reviews-grid" class="rv-grid"></div></section>
+    <section id="policy" class="band" hidden><div class="section-title"><h2>CAM KẾT & CHÍNH SÁCH</h2></div><div id="policy-grid" class="pol-grid"></div></section>
+
     <nav class="buybar" aria-label="Liên hệ nhanh">
         <a href="tel:0978612816"><i class="fa-solid fa-phone"></i> Gọi ngay</a>
         <a href="https://zalo.me/0978612816" target="_blank" rel="noopener">Chat Zalo</a>
@@ -250,7 +416,7 @@
         <div class="footer-logo">HOÀNG OANH</div>
         <p style="letter-spacing: 2px; font-size: 0.8rem;">BIỂU TƯỢNG CỦA SỰ QUYẾN RŨ</p>
         <div class="contact-info">
-            <p><i class="fa-solid fa-location-dot"></i> Showroom: Số 123 Đường Fashion, TP. Hồ Chí Minh</p>
+            <p id="f-addr" hidden><i class="fa-solid fa-location-dot"></i> <span id="f-addr-t"></span></p>
             <p><i class="fa-solid fa-phone"></i> Hotline: 0978 612 816</p>
             <p><i class="fa-brands fa-facebook"></i> Facebook: Hoang Oanh Luxury Fashion</p>
         </div>
@@ -281,7 +447,7 @@
             u = String(u || '').trim();
             const m = u.match(/drive\.google\.com\/file\/d\/([\w-]+)/) || u.match(/drive\.google\.com\/(?:open|uc)\?(?:[^#]*&)?id=([\w-]+)/);
             if (m) return `https://drive.google.com/thumbnail?id=${m[1]}&sz=w1000`;
-            return /^https?:\/\//i.test(u) ? u : '';
+            return /^https?:\/\//i.test(u) || /^[\w\-./]+\.(jpe?g|png|webp|avif)$/i.test(u) ? u : '';
         }
 
         async function guiApi(body) {
@@ -293,37 +459,59 @@
             return res.json();
         }
 
-        // ===== DANH SÁCH SẢN PHẨM: hiện nhanh từ bộ nhớ máy, rồi cập nhật bản mới nhất =====
+        // ===== DỮ LIỆU TỪ GOOGLE SHEET =====
         const $ = id => document.getElementById(id);
-        let ALL = [], fresh = false;
+        let ALL = [], S = {}, cat = '', fresh = false, cur = null, lastFocus = null, pxOn = false;
         const tien = p => parseInt(String(p.gia).replace(/\D/g, ''), 10) || 0;
+        const track = (n, d) => { try { if (window.fbq) fbq('track', n, d); } catch (e) {} };
 
         function render() {
             const q = $('q').value.trim().toLowerCase(), k = $('sort').value;
-            let d = ALL.filter(p => p.ten.toLowerCase().includes(q));
-            if (k === 'asc') d = [...d].sort((a, b) => tien(a) - tien(b));
-            if (k === 'desc') d = [...d].sort((a, b) => tien(b) - tien(a));
+            let d = ALL.filter(p => (!cat || p.nhom === cat) && p.ten.toLowerCase().includes(q));
+            if (k !== 'new') d = [...d].sort((a, b) => k === 'asc' ? tien(a) - tien(b) : tien(b) - tien(a));
+            const cs = [...new Set(ALL.map(p => p.nhom).filter(Boolean))];
+            $('chips').innerHTML = cs.length ? ['', ...cs].map(c => `<button class="chip${c === cat ? ' on' : ''}" data-c="${esc(c)}">${esc(c || 'Tất cả')}</button>`).join('') : '';
             $('product-container').innerHTML = d.length ? d.map((p, i) => `
-                <article class="product-card" style="--i:${i % 6}">
+                <article class="product-card${p.het_hang ? ' sold' : ''}" style="--i:${i % 6}" data-id="${esc(p.id)}" tabindex="0">
                     <div class="img-wrap"><img src="${esc(fixImg(p.hinh_anh))}" class="product-img" alt="${esc(p.ten)}" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div>
                     <div class="product-info">
                         <h3>${esc(p.ten)}</h3>
                         <p class="product-price">${esc(p.gia)}</p>
-                        <button class="btn-vip" data-id="${esc(p.id)}" data-ten="${esc(p.ten)}">ĐẶT MUA NGAY</button>
+                        ${p.het_hang ? '<span class="tag">Tạm hết hàng</span>' : ''}
                     </div>
                 </article>`).join('')
                 : `<p class="empty">${ALL.length ? 'Không tìm thấy thiết kế phù hợp.' : 'Kho hàng đang được cập nhật thêm mẫu mới...'}</p>`;
         }
 
+        // Cài đặt chung (địa chỉ, chính sách, Zalo, Pixel) và đánh giá: chỉ hiện khi bạn đã điền trong Sheet
+        function apDung(j) {
+            ALL = j.data || []; S = j.settings || {};
+            if (S.zalo) document.querySelectorAll('a[href^="https://zalo.me/"]').forEach(a => { a.href = 'https://zalo.me/' + S.zalo.replace(/\D/g, ''); });
+            const ci = [['chinh_sach_doi_tra', 'Đổi trả'], ['chinh_sach_giao_hang', 'Giao hàng'], ['thanh_toan', 'Thanh toán']].filter(x => S[x[0]]);
+            $('policy').hidden = !ci.length;
+            $('policy-grid').innerHTML = ci.map(x => `<div><h3>${x[1]}</h3><p>${esc(S[x[0]])}</p></div>`).join('');
+            const dc = [S.dia_chi, S.gio_mo_cua].filter(Boolean).join(' · ');
+            $('f-addr').hidden = !dc; $('f-addr-t').textContent = dc;
+            const rv = j.reviews || [];
+            $('reviews').hidden = !rv.length;
+            $('reviews-grid').innerHTML = rv.map(r => `<blockquote><p>“${esc(r.noi_dung)}”</p><cite>${esc(r.ten)}</cite></blockquote>`).join('');
+            if (!pxOn && /^\d{6,20}$/.test(S.facebook_pixel_id || '')) {
+                pxOn = true;
+                !function (f, b, e, v, n, t, s) { if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); }; if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+                fbq('init', S.facebook_pixel_id); fbq('track', 'PageView');
+            }
+            render();
+        }
+
         async function loadProducts() {
             $('product-container').innerHTML = '<div class="sk"></div>'.repeat(3);
-            try { const c = JSON.parse(localStorage.getItem('ho_sp') || 'null'); if (c) { ALL = c; render(); } } catch (e) {}
+            try { const c = JSON.parse(localStorage.getItem('ho_v2') || 'null'); if (c) apDung(c); } catch (e) {}
             try {
                 if (API_URL.startsWith('DAN_')) throw new Error('Chưa dán API_URL');
                 const j = await (await fetch(API_URL + '?action=products')).json();
                 if (!j.ok) throw new Error(j.error);
-                ALL = j.data; fresh = true; render();
-                try { localStorage.setItem('ho_sp', JSON.stringify(ALL)); } catch (e) {}
+                fresh = true; apDung(j);
+                try { localStorage.setItem('ho_v2', JSON.stringify(j)); } catch (e) {}
             } catch (err) {
                 console.error(err);
                 if (!ALL.length) $('product-container').innerHTML = '<p class="empty">Chưa tải được danh sách sản phẩm. Quý khách vui lòng tải lại trang hoặc gọi Hotline giúp Shop ạ.</p>';
@@ -331,26 +519,29 @@
         }
         $('q').addEventListener('input', render);
         $('sort').addEventListener('change', render);
+        $('chips').addEventListener('click', e => { const c = e.target.closest('.chip'); if (c) { cat = c.dataset.c; render(); } });
 
-        // ===== FORM ĐẶT HÀNG (thay cho hộp thoại prompt cũ) =====
-        let cur = null, lastFocus = null;
+        // ===== CHI TIẾT SẢN PHẨM + ĐẶT MUA (một cửa sổ, ít bước nhất) =====
         function openModal(id) {
             if (!fresh) { alert('Đang cập nhật bảng giá mới nhất, Quý khách vui lòng đợi giây lát rồi bấm lại ạ.'); return; }
-            cur = id; lastFocus = document.activeElement;
-            const p = ALL.find(x => String(x.id) === String(id)) || {}, im = fixImg(p.hinh_anh);
-            $('m-prod').textContent = p.ten || ''; $('m-price').textContent = p.gia || ''; $('m-img').hidden = !im; if (im) $('m-img').src = im;
-            $('m-err').textContent = '';
-            $('m-form').hidden = false; $('m-ok').hidden = true;
+            const p = ALL.find(x => String(x.id) === String(id)); if (!p) return;
+            cur = id; lastFocus = document.activeElement; track('ViewContent', { content_name: p.ten });
+            const imgs = [p.hinh_anh, ...(p.anh_phu || [])].map(fixImg).filter(Boolean);
+            $('m-img').hidden = !imgs.length; $('m-img').src = imgs[0] || '';
+            $('m-thumbs').innerHTML = imgs.length > 1 ? imgs.map(u => `<img src="${esc(u)}" alt="" loading="lazy">`).join('') : '';
+            $('m-prod').textContent = p.ten; $('m-price').textContent = p.gia; $('m-desc').textContent = p.mo_ta || '';
+            $('m-send').disabled = !!p.het_hang; $('m-send').textContent = p.het_hang ? 'TẠM HẾT HÀNG' : 'ĐẶT MUA NGAY';
+            $('m-form').hidden = false; $('m-ok').hidden = true; $('m-err').textContent = '';
             try { $('m-name').value = localStorage.getItem('ho_n') || ''; $('m-phone').value = localStorage.getItem('ho_p') || ''; } catch (e) {}
             $('modal').hidden = false; document.body.style.overflow = 'hidden';
-            setTimeout(() => $('m-phone').focus(), 50);
+            if (matchMedia('(min-width: 701px)').matches) setTimeout(() => $('m-phone').focus(), 50);
         }
         function closeModal() { $('modal').hidden = true; document.body.style.overflow = ''; if (lastFocus) lastFocus.focus(); }
 
-        $('product-container').addEventListener('click', e => {
-            const b = e.target.closest('.btn-vip');
-            if (b) openModal(b.dataset.id);
-        });
+        const mo = e => { const c = e.target.closest('.product-card'); if (c) openModal(c.dataset.id); };
+        $('product-container').addEventListener('click', mo);
+        $('product-container').addEventListener('keydown', e => { if (e.key === 'Enter') mo(e); });
+        $('m-thumbs').addEventListener('click', e => { const t = e.target.closest('img'); if (t) $('m-img').src = t.src; });
         $('m-close').onclick = $('m-done').onclick = closeModal;
         $('modal').addEventListener('click', e => { if (e.target === $('modal')) closeModal(); });
         document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('modal').hidden) closeModal(); });
@@ -364,10 +555,11 @@
                 const j = await guiApi({ action: 'order', id_sp: cur, ten_khach: ten, so_dt: sdt });
                 if (!j.ok) throw new Error(j.error);
                 try { localStorage.setItem('ho_n', ten); localStorage.setItem('ho_p', sdt); } catch (e2) {}
+                track('Lead', { content_name: $('m-prod').textContent });
                 $('m-form').hidden = true; $('m-ok').hidden = false;
             } catch (e3) {
                 err.textContent = (e3.message && e3.message !== 'Failed to fetch') ? e3.message : 'Chưa gửi được đơn. Quý khách thử lại hoặc gọi Hotline 0978 612 816 giúp Shop ạ.';
-            } finally { btn.disabled = false; btn.textContent = 'GỬI YÊU CẦU TƯ VẤN'; }
+            } finally { btn.disabled = false; btn.textContent = 'ĐẶT MUA NGAY'; }
         });
 
         // HIỆU ỨNG FOMO. Hiện đang TẮT vì đây là đơn mua giả; đổi thành true nếu muốn bật lại
@@ -391,6 +583,8 @@
 
         // Chạy các hàm khi mở web
         $('yr').textContent = new Date().getFullYear();
+        const hh = () => document.documentElement.style.setProperty('--hh', document.querySelector('header').offsetHeight + 'px');
+        hh(); addEventListener('resize', hh); addEventListener('load', hh);
         loadProducts();
         if (BAT_THONG_BAO_FOMO) {
             setInterval(showFomo, 30000);
